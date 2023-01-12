@@ -1,0 +1,26 @@
+<%- include("header") -%>
+<div class="box" id="heading">
+    <h1><%=dayhere%></h1>
+</div>
+
+
+<div class="box">
+
+    
+        <% for (let i = 0; i < itemhere.length; i++) { %>
+            <div class="item">
+            <input type="checkbox">
+            <p> <%= itemhere[i] %> </p>
+            </div>
+        <% }; %>
+    
+        <form action="/" class="item" method="post">
+    
+            <input type="text" name="newItem" placeholder="Add Items Here!" autocomplete="off">
+            <button type="submit" name="button">+</button>
+        </form>
+        
+   
+
+</div>
+<%- include("footer") -%>
